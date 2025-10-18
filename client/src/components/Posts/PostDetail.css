@@ -1,0 +1,97 @@
+/* Conteneur principal */
+.post-detail-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Titre du post */
+  .post-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0078ff;
+    margin-bottom: 12px;
+  }
+  
+  /* Date */
+  .post-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-bottom: 20px;
+  }
+  
+  /* Contenu */
+  .post-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 30px;
+  }
+  
+  /* Boutons éditer / supprimer */
+  .post-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .post-actions button {
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .edit-button {
+    background-color: #00b894;
+    color: #fff;
+  }
+  
+  .edit-button:hover {
+    background-color: #009975;
+    transform: translateY(-2px);
+  }
+  
+  .delete-button {
+    background-color: #ff4d4d;
+    color: #fff;
+  }
+  
+  .delete-button:hover {
+    background-color: #cc0000;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .post-detail-container {
+      padding: 20px;
+      margin: 30px 10px;
+    }
+  
+    .post-title {
+      font-size: 1.6rem;
+    }
+  
+    .post-content {
+      font-size: 1rem;
+    }
+  }
+  

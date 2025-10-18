@@ -1,0 +1,45 @@
+.splash-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #0078ff, #00bfff);
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 1s ease forwards;
+  }
+  
+  .splash-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease forwards;
+  }
+
+  .splash-container h2 {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+    animation: slideDown 1s ease forwards;
+  }
+  .pic {
+    border-radius: 30px;
+    animation: slideDown 1s ease forwards;
+  }
+  
+  .splash-container p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+    animation: slideDown 1s ease forwards;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideDown {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  

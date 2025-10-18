@@ -1,0 +1,80 @@
+.edit-post-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.6s ease;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .edit-post-container h2 {
+    font-size: 2rem;
+    color: #0078ff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Formulaire */
+  .edit-post-container form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+  
+  .edit-post-container input,
+  .edit-post-container textarea {
+    padding: 12px 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+  }
+  
+  .edit-post-container input:focus,
+  .edit-post-container textarea:focus {
+    outline: none;
+    border-color: #0078ff;
+    box-shadow: 0 0 6px rgba(0, 120, 255, 0.3);
+  }
+  
+  /* Bouton de soumission */
+  .edit-post-container button {
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: none;
+    background-color: #00b894;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .edit-post-container button:hover {
+    background-color: #009975;
+    transform: translateY(-2px);
+  }
+  
+  /* Responsive */
+  @media (max-width: 600px) {
+    .edit-post-container {
+      padding: 20px;
+      margin: 30px 10px;
+    }
+  
+    .edit-post-container h2 {
+      font-size: 1.6rem;
+    }
+  }
+  

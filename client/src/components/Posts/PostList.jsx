@@ -13,7 +13,7 @@ const PostList = () => {
 
   const fetchPosts = async () => {
     try {
-      const res = await axios.get("http://localhost:3000/api/posts");
+      const res = await axios.get("https://rest-api-fd2n.onrender.com/api/posts");
       setPosts(res.data);
     } catch (err) {
       console.error("Erreur de chargement :", err);
@@ -32,7 +32,7 @@ const PostList = () => {
         return;
       }
   
-      await axios.delete(`http://localhost:3000/api/posts/${id}`, {
+      await axios.delete(`https://rest-api-fd2n.onrender.com/api/posts/${id}`, {
         headers: {
           Authorization: `Bearer ${token}`, // ✅ Envoi du token au backend
         },

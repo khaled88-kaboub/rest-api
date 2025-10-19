@@ -14,7 +14,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3000/api/auth/register", user);
+      await axios.post("https://rest-api-fd2n.onrender.com/api/auth/register", user);
       navigate("/login");
     } catch (error) {
       console.error("Erreur lors de l'inscription :", error);

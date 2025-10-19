@@ -18,6 +18,11 @@ const authRoutes = require("./routes/authRoutes");
 app.use("/api/posts", postRoutes);
 app.use("/api/auth", authRoutes);
 
+// ✅ Route racine (évite 404)
+app.get("/", (req, res) => {
+  res.send("🚀 API en ligne et fonctionnelle !");
+});
+
 // mongoose connect ...
 const PORT = process.env.PORT || 3000;
 mongoose.connect(process.env.MONGO_URI)

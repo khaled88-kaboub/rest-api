@@ -11,7 +11,7 @@ const PostDetail = () => {
   useEffect(() => {
     const fetchPost = async () => {
       try {
-        const res = await axios.get(`http://localhost:3000/api/posts/${id}`);
+        const res = await axios.get(`https://rest-api-fd2n.onrender.com/api/posts/${id}`);
         setPost(res.data);
       } catch (error) {
         console.error("Erreur lors de la récupération du post :", error);

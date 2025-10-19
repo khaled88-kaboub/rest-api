@@ -14,7 +14,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:3000/api/auth/login", user);
+      const res = await axios.post("https://rest-api-fd2n.onrender.com/api/auth/login", user);
       localStorage.setItem("token", res.data.token);
       localStorage.setItem("username", res.data.user.username); // ← Stocke le nom d'utilisateur
       navigate("/posts");

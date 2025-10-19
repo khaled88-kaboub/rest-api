@@ -7,7 +7,7 @@ import Login from "./components/Auth/Login";
 import Register from "./components/Auth/Register";
 import ProtectedRoute from "./ProtectedRoute";
 import useAuth from "./hooks/useAuth";
-import Navbar from "./components/layout/Navbar";
+import Navbar from "./components/Layout/Navbar";
 import Splash from "./components/Layout/Splash";
 
 import "./App.css";

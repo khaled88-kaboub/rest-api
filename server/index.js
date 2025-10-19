@@ -8,7 +8,14 @@ dotenv.config();
 const app = express();
 
 //app.use(cors()); // permet les requêtes du frontend
-app.use(cors({ origin: "https://kab-blog.netlify.app" }));
+
+
+app.use(cors({
+  origin: ["https://kab-blog.netlify.app", "https://blog-maint.netlify.app"],
+  methods: ["GET", "POST", "PUT", "DELETE"],
+  credentials: true
+}));
+
 app.use(express.json()); // parse JSON body
 app.use(express.urlencoded({ extended: true }));
 

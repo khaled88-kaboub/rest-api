@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://rest-api-fd2n.onrender.com/api", // change selon ton backend
+  baseURL: "https://rest-api-fd2n.onrender.com", // change selon ton backend
 });
 
 // ajouter le token automatiquement si présent

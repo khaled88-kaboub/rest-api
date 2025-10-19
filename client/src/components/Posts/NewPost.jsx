@@ -14,7 +14,7 @@ const NewPost = () => {
 
     try {
       await axios.post(
-        "http://localhost:3000/api/posts",
+        "https://rest-api-fd2n.onrender.com/api/posts",
         { title, content },
         {
           headers: { Authorization: `Bearer ${token}` },

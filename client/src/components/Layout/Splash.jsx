@@ -17,7 +17,9 @@ const Splash = () => {
   return (
     <div className="splash-container">
       <h1>📝 Bienvenue sur MyBlog</h1>
-      <img className="pic" src="src/assets/logo.jpg" />
+     
+
+      <img className="pic" src="/logo.jpg" alt="Logo" />
       <p>Powered by Khaled KABOUB, Chargement en cours...</p>
       <h2>All rights reserved @2025</h2>
     </div>

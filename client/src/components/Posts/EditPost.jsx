@@ -12,7 +12,7 @@ const EditPost = () => {
     const fetchPost = async () => {
       try {
         const token = localStorage.getItem("token");
-        const res = await axios.get(`http://localhost:3000/api/posts/${id}`, {
+        const res = await axios.get(`https://rest-api-fd2n.onrender.com/api/posts/${id}`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setPost(res.data);
@@ -32,7 +32,7 @@ const EditPost = () => {
     const token = localStorage.getItem("token");
     try {
       await axios.put(
-        `http://localhost:3000/api/posts/${id}`,
+        `https://rest-api-fd2n.onrender.com/api/posts/${id}`,
         post,
         { headers: { Authorization: `Bearer ${token}` } }
       );

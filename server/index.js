@@ -7,7 +7,8 @@ const path = require("path");
 dotenv.config();
 const app = express();
 
-app.use(cors()); // permet les requêtes du frontend
+//app.use(cors()); // permet les requêtes du frontend
+app.use(cors({ origin: "https://blog-maint.netlify.app" }));
 app.use(express.json()); // parse JSON body
 app.use(express.urlencoded({ extended: true }));
 
